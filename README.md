@@ -1,11 +1,17 @@
 # Shakespeare Text Generation using RNN and LSTM
 
-This project implements a character-level language model** using **RNN** and **LSTM** to generate text in the style of Shakespeare.  
+This project implements a **character-level language model** using **RNN** and **LSTM** to generate text in the style of Shakespeare.  
 Using **PyTorch**, both Vanilla RNN and LSTM architectures were designed and compared to evaluate their ability to learn linguistic patterns.
-
 The LSTM model achieved **lower validation loss**, showing better performance in learning **long-term dependencies**.  
 Additionally, **temperature sampling** was applied to balance grammatical accuracy and creativity.  
 Texts generated with temperatures between **0.7–1.0** most effectively reproduced Shakespearean linguistic style.
+
+---
+
+## Technologies Used
+**Python**, **PyTorch**, **Deep Learning**, **NLP**, **RNN**, **LSTM**
+
+---
 
 
 # 프로젝트 구조
