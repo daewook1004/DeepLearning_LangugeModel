@@ -12,7 +12,6 @@ Texts generated with temperatures between **0.7–1.0** most effectively reprodu
 **Python**, **PyTorch**, **Deep Learning**, **NLP**, **RNN**, **LSTM**
 
 ---
-
 ## 📂 Project Structure
 ```
 ├── main.py # Training and validation logic for RNN & LSTM models
@@ -21,6 +20,40 @@ Texts generated with temperatures between **0.7–1.0** most effectively reprodu
 ├── dataset.py # Loads and preprocesses the Shakespeare dataset
 └── shakespeare_train.txt # Source text data for training
 ```
+## 🚀 How to Run
+### Clone the repository
+```bash
+git clone https://github.com/daewook1004/DeepLearning_LangugeModel.git
+cd DeepLearning_LangugeModel
+```
+### Install dependencies
+```bash
+pip install torch numpy tqdm
+```
+### Train the models
+Run the training script to train both RNN and LSTM models:
+```bash
+python main.py
+```
+The script will automatically train both models, log training/validation losses,
+and save the best models as best_rnn_model.pth and best_lstm_model.pth.
+
+### Generate Shakespeare-style text
+Once training is complete, generate new text using the trained LSTM model:
+```bash
+python generate.py
+```
+You can modify the seed character and temperature in generate.py
+to control creativity and text variation.
+
+### View results
+Generated samples and loss plots are saved in:
+```bash
+graph_pictures/
+best_lstm_model.pth
+best_rnn_model.pth
+```
+
 ---
 ## 📉 RNN Training & Validation Loss
 <div align="center">
