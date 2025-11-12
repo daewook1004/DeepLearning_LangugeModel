@@ -1,10 +1,12 @@
 # Shakespeare Text Generation using RNN and LSTM
-본 프로젝트에서는 RNN과 LSTM 모델을 활용하여 셰익스피어 문체의 텍스트를 생성하는 문자 단위 언어 모델을 구현함 
-PyTorch를 사용해 Vanilla RNN과 LSTM 구조를 직접 설계하고, 두 모델의 언어 패턴 학습 성능을 비교.
-LSTM 모델은 RNN보다 더 낮은 (Validation Loss을 보여, Long-term dependency을 더 잘 학습하는 것으로 나타남.
-또한 Temperature 샘플링 기법을 적용하여 문법적 정확성과 창의성 간의 균형을 조정하였으며, temperature 0.7~1.0 구간에서 셰익스피어 특유의 문체를 가장 잘 재현하는 결과를 얻음.
-이 프로젝트를 통해 시퀀스 모델링, 신경망 학습, 텍스트 생성의 핵심 원리를 이해할 수 있었음.
-사용 기술: Python, PyTorch, Deep Learning, NLP, RNN, LSTM
+
+This project implements a character-level language model** using **RNN** and **LSTM** to generate text in the style of Shakespeare.  
+Using **PyTorch**, both Vanilla RNN and LSTM architectures were designed and compared to evaluate their ability to learn linguistic patterns.
+
+The LSTM model achieved **lower validation loss**, showing better performance in learning **long-term dependencies**.  
+Additionally, **temperature sampling** was applied to balance grammatical accuracy and creativity.  
+Texts generated with temperatures between **0.7–1.0** most effectively reproduced Shakespearean linguistic style.
+
 
 # 프로젝트 구조
 <h4>- main.py: RNN, LSTM 모델 학습 및 평가 검증 로직이 들어있는 스크립트</h4>
